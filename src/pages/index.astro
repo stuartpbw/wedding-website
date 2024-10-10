@@ -1,24 +1,13 @@
 ---
-import "@fontsource/alex-brush";
-import "@fontsource/cormorant-garamond";
-import "@fontsource/nunito-sans";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Andrea & Stuart</title>
-  </head>
-  <body>
-    <header class="p-6 grid min-h-screen place-items-center">
-      <div class="text-center">
-        <p class="text-7xl font-cursive">Alex Brush</p>
-        <p class="text-4xl font-display">Cormorant Garamond</p>
-        <p class="text-lg font-body">Nunito Sans</p>
-      </div>
-    </header>
-  </body>
-</html>
+<Layout title="Andrea & Stuart">
+  <header class="p-6 grid min-h-screen place-items-center">
+    <div class="text-center">
+      <p class="text-7xl font-cursive">Alex Brush</p>
+      <p class="text-4xl font-display">Cormorant Garamond</p>
+      <p class="text-lg font-body">Nunito Sans</p>
+    </div>
+  </header>
+</Layout>
