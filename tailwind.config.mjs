@@ -20,5 +20,27 @@ export default {
       },
     },
   },
-  plugins: [],
+  corePlugins: { container: false },
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".container": {
+          maxWidth: "100%",
+          marginInline: "auto",
+          "@screen sm": {
+            maxWidth: "40rem",
+          },
+          "@screen md": {
+            maxWidth: "48rem",
+          },
+          "@screen lg": {
+            maxWidth: "64rem",
+          },
+          "@screen xl": {
+            maxWidth: "80rem",
+          },
+        },
+      });
+    },
+  ],
 };
