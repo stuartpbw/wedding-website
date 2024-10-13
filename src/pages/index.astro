@@ -1,13 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import heroImage from "../images/bg-hero.jpg";
 ---
 
 <Layout title="Andrea & Stuart">
-  <header class="p-6 grid min-h-screen place-items-center">
-    <div class="text-center">
-      <p class="text-7xl font-cursive">Alex Brush</p>
-      <p class="text-4xl font-display">Cormorant Garamond</p>
-      <p class="text-lg font-body">Nunito Sans</p>
+  <header
+    class="bg-center bg-cover"
+    style={{ backgroundImage: `url(${heroImage.src})` }}
+  >
+    <div class="grid min-h-screen place-content-center text-center bg-white/75">
+      <h1 class="text-7xl font-cursive mb-6 lg:text-8xl">Andrea &amp; Stuart</h1>
+      <div class="grid text-sm uppercase tracking-[0.25em] lg:text-base">
+        <time datetime="2025-11-08">November 8, 2025</time>
+        <span>&mdash;</span>
+        <span>Puerto Vallarta, Mexico</span>
+      </div>
     </div>
   </header>
 </Layout>
